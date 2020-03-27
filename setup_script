@@ -1,0 +1,10 @@
+#!/bin/bash
+yum update
+yum install git
+yum install python3
+curl -O https://bootstrap.pypa.io/get-pip.py
+python3 get-pip.py
+yum install mysql
+yum install mysql-devel
+yum install gcc
+yum install python3-devel
