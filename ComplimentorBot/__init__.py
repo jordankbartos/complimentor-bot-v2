@@ -13,8 +13,9 @@ import random
 import sys
 
 # connect to the database
+sys.path.append('/var/www/complimentor-bot-v2/ComplimentorBot')
 sys.path.append('./dbcon')
-from dbcon import db
+from .dbcon import compliment_db
 
 app = Flask(__name__)
 
@@ -30,4 +31,5 @@ def respond():
     return 'nothing yet'
 
 
-app.run()
+if __name__ == "__main__":
+    app.run()
