@@ -30,4 +30,4 @@ def respond():
     return 'nothing yet'
 
 
-app.run(host='localhost', port=80)
+app.run()
